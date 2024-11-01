@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int variavel = 10;      // Declara uma variável inteira
+    int *ponteiro;          // Declara um ponteiro para inteiro
+
+    ponteiro = &variavel;   // Atribui ao ponteiro o endereço da variável
+
+    // Imprime o valor da variável antes da modificação
+    printf("Valor da variável antes da modificação: %d\n", variavel);
+
+    // Modifica o valor da variável usando o ponteiro
+    *ponteiro = 20;
+
+    // Imprime o valor da variável depois da modificação
+    printf("Valor da variável depois da modificação: %d\n", variavel);
+
+    return 0;
+}
